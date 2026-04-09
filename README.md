@@ -1,16 +1,38 @@
-# React + Vite
+FinanzasMJ — Plataforma de Control FinancieroEste proyecto es una aplicación frontend desarrollada con React y Vite, enfocada en la gestión de finanzas personales. La aplicación permite el seguimiento de activos y la visualización de reportes mediante una interfaz moderna y eficiente.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Características Principales:
+Gestión de Autenticación: Sistema de acceso y registro de usuarios mediante Context API.
+Dashboard Financiero: Panel principal para la visualización de datos y transacciones.
+Consumo de Servicios: Integración con API externa para la persistencia de datos.
 
-Currently, two official plugins are available:
+Tecnologías Utilizadas
+React.js: Biblioteca principal para la construcción de interfaces de usuario.
+Vite: Herramienta de construcción y entorno de desarrollo.
+Axios: Cliente para la ejecución de peticiones HTTP.
+React Router: Gestión de la navegación y protección de rutas.
+CSS3: Estilos personalizados con arquitectura modular.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Arquitectura de Carpetas
+El proyecto sigue una estructura organizada por módulos y servicios:
+src/
+├── assets/        # Recursos estáticos
+├── dashboard/     # Lógica y vistas del panel principal
+├── features/      # Funcionalidades específicas (Auth, Context)
+├── hooks/         # Lógica reutilizable (useValidation)
+├── pages/         # Vistas generales de la aplicación
+├── services/      # Servicios de API (authService, transactionService)
+├── layout/        # Estructura visual base
+├── shared/        # Componentes y estilos globales
+├── App.jsx        # Configuración de rutas
+└── main.jsx       # Punto de entrada de la aplicación
+Instalación y Ejecución
+Para configurar el proyecto en un entorno local, ejecute los siguientes comandos:
+Clonación del repositorio:git clone https://github.com/danielaBSTARS/fronteadREACTfinal.git
+Instalación de dependencias:npm install Ejecución en desarrollo:npm run dev
 
-## React Compiler
+Datos del Autor
+Nombre: Daniela Bonilla Urrego
+Fecha de nacimiento: 7 de febrero de 2006
+rigen: Medellín, Colombia
+Perfil: Estudiante de ADSO (Análisis y Desarrollo de Software) en el SENAGitHub: danielaBSTARS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
