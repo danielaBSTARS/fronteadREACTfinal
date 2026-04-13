@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'https://backend-finanzasmj-fuoqk7m4j-daniela-s-projects-f35cb109.vercel.app/api',
+  baseURL: 'https://backend-finanzasmj.onrender.com/api',
 });
 
 // Lee el token en CADA request, no solo al crear la instancia
