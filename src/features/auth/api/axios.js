@@ -1,8 +1,7 @@
-// ✅ axios.js corregido
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'http://localhost:3000/api',
+  baseURL: 'https://backend-finanzasmj-fuoqk7m4j-daniela-s-projects-f35cb109.vercel.app/api',
 });
 
 // Lee el token en CADA request, no solo al crear la instancia
