@@ -15,6 +15,7 @@ API.interceptors.request.use(
     return config;
   },
   (error) => Promise.reject(error)
+  
 );
 
 // Interceptor de respuesta — maneja 401 globalmente
